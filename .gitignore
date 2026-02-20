@@ -8,7 +8,6 @@
 *.pdf
 *.bbl
 *.blg
-*.csh
 .nfs*
 *.fls
 *.fdb_latexmk
