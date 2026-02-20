@@ -1,0 +1,294 @@
+\documentclass[12pt]{article}
+
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{xcolor}
+\usepackage{natbib}
+\usepackage[margin=1.5cm]{geometry}
+
+\usepackage{tikz}
+
+\usepackage[most]{tcolorbox}
+
+\makeatletter
+\newcommand*{\radiobutton}{%
+  \@ifstar{\@radiobutton0}{\@radiobutton1}%
+}
+\newcommand*{\@radiobutton}[1]{%
+  \begin{tikzpicture}
+    \pgfmathsetlengthmacro\radius{height("X")/2}
+    \draw[radius=\radius] circle;
+    \ifcase#1 \fill[radius=.6*\radius] circle;\fi
+  \end{tikzpicture}%
+}
+\makeatother
+
+\usepackage{enumitem,amssymb}
+\newlist{todolist}{itemize}{2}
+\setlist[todolist]{label=$\square$}
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+\newcommand{\done}{\rlap{$\square$}{\raisebox{2pt}{\large\hspace{1pt}\cmark}}%
+\hspace{-2.5pt}}
+\newcommand{\wontfix}{\rlap{$\square$}{\large\hspace{1pt}\xmark}}
+
+\title{Letter of Intent for \href{https://www.software.ac.uk/research-software-maintenance-fund/round-2}{Research Software Maintenance Fund -- Round 2}}
+\author{}
+
+\newenvironment{instruction}{%
+    \begin{tcolorbox}[breakable,colback=red!5,colframe=red,title=Instruction]%
+	}{%
+    	\end{tcolorbox}%
+	}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{Start here}
+
+\subsection{Category}
+
+RSMF Round 2
+
+\subsection{Application name}
+
+Consolidating Bonsai as a Standard for Neuroscience Intelligent Experimental Control
+
+\subsection{Research Area}
+
+Biological, Medical and Veterinary Sciences
+
+\pagebreak
+
+\section{Elegibility}
+
+\begin{instruction}
+
+    This criterion considers whether the proposed work is in scope for and
+    eligible for the Research Software Maintenance Fund (RSMF). The RSMF aims
+    to fund work that will improve the sustainability of research software,
+    particularly improving maintenance, reducing technical debt, improving user
+    experience, and building community. The RSMF is especially interested in
+    funding work for which it is hard to find funding elsewhere.
+
+\end{instruction}
+
+\subsection{Software to be maintained}
+
+Bonsai
+
+\subsection{Programming language}
+
+C\#
+
+\subsection{Software maturity and UK research benefit}
+
+\begin{instruction}
+
+    500 words
+
+    Please demonstrate how the software(s) you maintain:
+
+    \begin{itemize}
+
+        \item Supports research being carried out in the United Kingdom.
+
+        \item Is beyond the prototype/pilot stage and has had multiple stable /
+            production releases (i.e. versions that have been released to end
+            users, not just used for testing or evaluation).
+
+        \item Is used by people outside their organisation(s) and is used
+            beyond the immediate collaborators of the software’s
+            developers/wider project team.
+
+        \item Has mechanisms for raising issues, providing feedback, and adding
+            additional contributors.
+
+    \end{itemize}
+
+\end{instruction}
+
+\input{maturityAndUKresearchBenefit}
+
+\subsection{Lead organization}
+
+\begin{instruction}
+    This is the legal organisation employing the Project Lead.
+
+    The organisation needs to be \href{}{eligible for UKRI funding}.
+\end{instruction}
+
+\pagebreak
+
+\section{Vision and impact}
+
+\subsection{Motivation, Vision and Impact}
+
+\begin{instruction}
+    500 words
+
+    \begin{itemize}
+
+        \item The applicants demonstrate a clear need in the research community,
+            a clear benefit to UK research, and the resulting impact on the
+            research that is possible.
+
+        \item The applicants understand the current software ecosystem (including
+            other software used in this research area, and how this differs
+            from their software) and researcher use cases / workflows (the way
+            that software is used in combination) for the research areas their
+            software targets.
+
+        \item The vision of the proposed work is clearly articulated.
+
+    \end{itemize}
+
+\end{instruction}
+
+\input{motivationVisionAndImpact}
+
+\subsection{Benefits}
+
+\begin{instruction}
+
+    250 words
+
+    \begin{itemize}
+
+        \item The benefit to the long-term maintenance, governance, and
+            adoption of the software is clearly demonstrated.
+
+        \item The applicants demonstrate that the project will lead to
+            advancement of good research software practices appropriate for
+            their area / community.
+
+        \item The project has considered how to increase the variety of users
+            and contributors (for instance, the number of different
+            organisations where users / contributors are based; the career
+            stages of contributors).
+
+    \end{itemize}
+
+\end{instruction}
+
+\input{benefitToUK}
+
+\subsection{EDIA}
+
+\begin{instruction}
+
+    250 words
+
+    \begin{itemize}
+
+        \item The project has considered the accessibility of the software and
+            explains how this could be improved
+
+        \item The project understands their current position in relation to
+            equity, diversity, and inclusivity and explains how this could be
+            improved.
+
+    \end{itemize}
+
+\end{instruction}
+
+\input{edia}
+
+\pagebreak
+
+\section{Feasibility and Approach}
+
+\begin{instruction}
+
+This criterion considers the way that the proposed work will be carried out.
+Here we look for evidence that the funded work has a clear plan that will
+deliver the objectives and benefits.
+
+While we do not expect a budget at this stage of the application process,
+please do keep in mind that the maximum we will fund is £150k for a duration of
+one year.
+
+\end{instruction}
+
+\subsection{Proposed work}
+
+\begin{instruction}
+
+    500 words
+
+    \begin{itemize}
+
+        \item The objectives, activities and outputs of the work are clearly
+            described and relate to each other and to the benefits.
+
+        \item The project team have considered how the way they measure the
+            progress of their project will be applied to this work.
+
+    \end{itemize}
+
+\end{instruction}
+
+\input{proposedWork}
+
+\subsection{Software sustainability}
+
+\begin{instruction}
+
+    250 words
+
+    \begin{itemize}
+
+        \item The future sustainability of the software (i.e. the software will
+            continue to be available in the future, on new platforms, meeting
+            new needs) has been considered, and the project has developed, or
+            is committed to developing, a roadmap (a summary of the vision for
+            the software and the direction of the software over time), a
+            governance structure, and a sustainability/business plan.
+
+    \end{itemize}
+
+\end{instruction}
+
+\input{sustainability}
+
+\pagebreak
+
+\section{Capability to Deliver}
+
+\begin{instruction}
+
+    This criterion considers the capability of the team, processes, and
+    procedures in place for maintaining and developing software, and delivering
+    the proposed work.
+
+\end{instruction}
+
+\subsection{Delivery team and mechanisms}
+
+\begin{instruction}
+
+    500 words
+
+    \begin{itemize}
+
+        \item The Leads / Co-Leads have appropriate skills, experience and
+            connection to the software to achieve the objectives of the work.
+
+        \item There are clear mechanisms for engaging the community and seeking
+            external contributions and feedback, and how this will be
+            incorporated into the work.
+
+        \item Approaches to development of the software being used are suitable
+            for the software and achieving the goals of the work.
+
+    \end{itemize}
+
+\end{instruction}
+
+\input{deliveryTeamAndMechanisms}
+
+\bibliographystyle{apalike}
+\bibliography{bonsai}
+
+\end{document}

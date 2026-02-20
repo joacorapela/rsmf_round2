@@ -1,0 +1,17 @@
+*~
+*.aux
+*.log
+*.out
+*.toc
+*.bak
+*.swp
+*.pdf
+*.bbl
+*.blg
+*.csh
+.nfs*
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+eoi/old

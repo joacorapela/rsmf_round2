@@ -1,0 +1,126 @@
+
+\subsubsection*{Motivation}
+
+Bonsai\footnote[1]{\url{https://bonsai-rx.org/}} is a software ecosystem used by thousands
+of (mostly experimental neuroscience) users in the UK and all around the world
+(7,000 downloads per year and 1,000 citations per year of the core Bonsai
+paper~\citep{lopesEtAl15}).
+%
+Being a visual-programming language, Bonsai allows scientists with little
+programming experience to control sophisticated neuroscience experiments.
+
+Machine learning (ML) is now essential for most branches of science,
+neuroscience in particular.
+%
+Yet, current neuroscience experiments are still controlled by simple means
+(e.g., deliver a reward when a rat pokes left but not right).
+%
+In 2022, we realised that adding ML functionality to Bonsai could empower
+Bonsai users and enable a radically new type of intelligent experimental
+control.
+%
+We created the
+Bonsai.ML\footnote[2]{\url{https://bonsai-rx.org/machinelearning}}
+package providing machine learning functionality to the Bonsai ecosystem.
+
+Since most experimental neuroscientists currently using Bonsai are not highly
+skilled in ML, to help experimental neuroscientists adopt machine learning
+tools and maximise the impact of Bonsai.ML, we need to invest extra
+efforts on documentation, training and community building, as we propose below.
+
+\subsubsection*{Relevance to the UK Research Ecosystem}
+
+Bonsai.rx has established itself as mission-critical infrastructure within the
+UK’s world-leading neuroscience and behavioral research communities. Its
+adoption is widespread across premier institutions; at
+\href{https://www.ucl.ac.uk/}{University College London (UCL)} alone, it is
+utilized by more than ten research groups at the
+\href{https://www.sainsburywellcome.org/}{Sainsbury Wellcome Centre}, as well
+as the \href{https://www.ucl.ac.uk/brain-sciences/cortexlab}{Cortex Lab}, the
+\href{https://coen-lab.com/}{Coen Lab}, and the
+\href{https://www.ibn.ucl.ac.uk/}{Institute for Behavioural Neuroscience}.
+Notably, \href{https://www.saleemlab.com/}{Prof. Aman Saleem} at UCL developed
+\href{https://bonvision.github.io/info/Home/}{BonVision}, a globally recognized
+Bonsai-based package for high-performance virtual reality environments.
+
+The framework's reach extends to other national centers of excellence,
+including the \href{https://www.tripodilab.org/}{Kinetic Cognition Lab} at the
+\href{https://www2.mrc-lmb.cam.ac.uk/}{MRC Laboratory of Molecular Biology} and
+the \href{https://www.crick.ac.uk/research/labs/petr-znamenskiy}{Znamenskiy
+Lab} at the \href{https://www.crick.ac.uk/}{Francis Crick Institute}. In these
+settings, Bonsai is not merely an auxiliary tool but the backbone of
+experimental control and data acquisition; its discontinuation would cause
+severe disruption to active, high-priority UK research programs.
+
+Consolidating the machine learning functionality of Bonsai will substantially
+expand the power of experimental tools available to these groups and lead to
+new scientific discoveries in the UK.
+
+\subsubsection*{Democratization of ML}
+
+A core objective of this project is the democratization of machine learning
+(ML) within the UK’s experimental neuroscience community. By leveraging
+Bonsai.ML, we provide a low-code, reactive interface that empowers
+experimentalists to integrate sophisticated inference models directly into
+their experimental loops. This aligns with UKRI’s high-priority mandate to
+upskill the biological workforce in data science and AI.
+
+Training experimental scientists in ML is no longer a luxury but a fundamental
+requirement for the next generation of research. Specifically, Bonsai.ML is
+enabling:
+
+\begin{enumerate}
+
+    \item\textbf{Active Learning \& Real-time Closed-loop Control}: Moving
+    beyond post-hoc analysis by allowing scientists to use ML to trigger
+    experimental interventions based on real-time neural state detection.
+
+    \item\textbf{Model Interpretability}: Ensuring that those closest to the
+    biological data understand the assumptions and limitations of the ML models
+    they employ, leading to more robust and reproducible science.
+
+    \item\textbf{Research Software Sustainability}: Reducing the reliance on
+    `black-box' commercial software by fostering a cohort of
+    `Scientist-Developers' who can maintain and extend open-source tools within
+    the UK infrastructure.
+
+\end{enumerate}
+
+\subsubsection*{Relation to current experimental control software ecosystem}
+The large field of technologies serving experimental control and behaviour
+monitoring is traditionally occupied either by domain-specific graphical user
+interfaces for control and recording of specific devices and experiment types
+(e.g.\ Open Ephys GUI\footnote[16]{\url{open-ephys.org/gui/}}, Miniscope DAQ
+Software\footnote[17]{\url{github.com/Aharoni-Lab/Miniscope-DAQ-QT-Software}})
+or by real-time control frameworks for specifying task logic using state
+machine or similar formalisms (e.g. NIMH
+ML\footnote[18]{\url{monkeylogic.nimh.nih.gov/}},
+pyControl\footnote[19]{\url{pycontrol.readthedocs.io/en/latest/}},
+Autopilot\footnote[20]{\url{docs.auto-pi-lot.com/en/latest/}},
+Sanworks\footnote[21]{\url{sanworks.io/index.php}}).
+%
+These dedicated interfaces are typically very comfortable for experimenters in
+the specific domain for which the tool is designed, but can become unwieldy
+with the introduction of a new device or task variation from outside their
+usual scope.
+%
+Alternatively, one can use a more general programming language such as Python
+or MATLAB, with the disadvantage of the code being harder to create,
+understand, maintain, and change.
+
+Programming languages like LabVIEW straddle the middle ground and provide a
+high-level, flexible visual interface for composing data acquisition and
+control systems. Unlike Bonsai, however, the graphical elements of LabVIEW are
+heterogeneous and very fine grained, thus requiring long and complex logical
+structures to implement even a simple experimental control system.
+%
+A severe disadvantage of LabVIEW for the research community is that it is not
+free nor open source.
+
+By providing an extremely simple, yet flexible visual syntax, Bonsai provides
+the opportunity for even complete non-programmers to design and successfully
+customise relatively complex experiments from the ground up. It is this
+capability in particular which has made Bonsai such an attractive standard tool
+in experimental neuroscience.
+%
+In addition, Bonsai is free and open source.
