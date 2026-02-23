@@ -61,7 +61,7 @@ Motivation, Vision and Impact
 
 ### Motivation
 
-Bonsai[^1] is a software ecosystem used by thousands of (mostly
+[Bonsai](https://bonsai-rx.org/bonsai) is a software ecosystem used by thousands of (mostly
 experimental neuroscience) users in the UK and all around the world
 (7,000 downloads per year and 1,000 citations per year of the core
 Bonsai paper [Lopes et al., 2015]). Being a visual-programming language,
@@ -74,7 +74,7 @@ still controlled by simple means (e.g., deliver a reward when a rat
 pokes left but not right). In 2022, we realised that adding ML
 functionality to Bonsai could empower Bonsai users and enable a
 radically new type of intelligent experimental control. We created the
-Bonsai.ML[^2] package providing machine learning functionality to the
+[Bonsai.ML](https://github.com/bonsai-rx/machinelearning) package providing machine learning functionality to the
 Bonsai ecosystem. Bonsai.ML now contains packages to characterise animal
 behaviour (e.g., [Linear Dynamical
 Systems](https://bonsai-rx.org/machinelearning/articles/LinearDynamicalSystems/lds-overview.html)
@@ -347,10 +347,11 @@ programming, and experimental neuroscience.
     non-profit engine driving the core development of the Bonsai visual
     programming language.
 
--   **Dr. Joaquín Rapela (RSE, Gatsby Unit):** A specialist in
-    probabilistic ML and signal processing with industry experience at
-    IBM. He is the lead developer of svGPFA and has spearheaded the
-    technical development of Bonsai.ML since its inception.
+-   **Dr. Joaquín Rapela (RSE, Gatsby Unit):** A specialist in probabilistic ML
+    and signal processing with industry experience at IBM. He is the lead
+    developer of svGPFA and has spearheaded the technical development of
+    Bonsai.ML since its inception. **He lead the preparation of the current
+    proposal.**
 
 -   **Dr. Nicholas Guilbeault (RSE, NeuroGEARS):** With a background in
     biology, he has ample experience in closed-loop stimulation and
@@ -398,6 +399,3 @@ commercial software. These practices ensure that Bonsai remains a
 transparent and sovereign research infrastructure for the UK and
 international scientific communities.
 
-[^1]: <https://bonsai-rx.org/>
-
-[^2]: <https://bonsai-rx.org/machinelearning>
