@@ -12,5 +12,6 @@
 *.fls
 *.fdb_latexmk
 *.synctex.gz
+*.csh
 
 eoi/old
