@@ -1,0 +1,105 @@
+\documentclass[12pt]{article}
+
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{xcolor}
+\usepackage{natbib}
+\usepackage[margin=1.5cm]{geometry}
+
+\usepackage{tikz}
+
+\usepackage[most]{tcolorbox}
+
+\makeatletter
+\makeatother
+
+\usepackage{enumitem,amssymb}
+\newlist{todolist}{itemize}{2}
+\setlist[todolist]{label=$\square$}
+\usepackage{pifont}
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+\newcommand{\done}{\rlap{$\square$}{\raisebox{2pt}{\large\hspace{1pt}\cmark}}%
+\hspace{-2.5pt}}
+\newcommand{\wontfix}{\rlap{$\square$}{\large\hspace{1pt}\xmark}}
+
+\title{Letter of Intent for \href{https://www.software.ac.uk/research-software-maintenance-fund/round-2}{Research Software Maintenance Fund -- Round 2}}
+\author{}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+\section{Start here}
+
+\subsection{Category}
+
+RSMF Round 2
+
+\subsection{Application name}
+
+Consolidating Bonsai as a Standard for Neuroscience Intelligent Experimental Control
+
+\subsection{Research Area}
+
+Biological, Medical and Veterinary Sciences
+
+\pagebreak
+
+\section{Eligibility}
+
+\subsection{Software to be maintained}
+
+Bonsai
+
+\subsection{Programming language}
+
+C\#
+
+\subsection{Software maturity and UK research benefit}
+
+\input{maturityAndUKresearchBenefit}
+
+\subsection{Lead organisation}
+
+Sainsbury Wellcome Centre, University College London
+
+\pagebreak
+
+\section{Vision and impact}
+
+\subsection{Motivation, Vision and Impact}
+
+\input{motivationVisionAndImpact}
+
+\subsection{Benefits}
+
+\input{benefitToUK}
+
+\subsection{EDIA}
+
+\input{edia}
+
+\pagebreak
+
+\section{Feasibility and Approach}
+
+\subsection{Proposed work}
+
+\input{proposedWork}
+
+\subsection{Software sustainability}
+
+\input{sustainability}
+
+\pagebreak
+
+\section{Capability to Deliver}
+
+\subsection{Delivery team and mechanisms}
+
+\input{deliveryTeamAndMechanisms}
+
+\bibliographystyle{apalike}
+\bibliography{bonsai,latentVariablesModels}
+
+\end{document}
